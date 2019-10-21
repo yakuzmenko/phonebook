@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Phone{% endblock %}
+
+{% block body %}
+    {{ include('phonebook/_form.html.twig', { form_title: 'Edit phone record', submit_label: 'Edit'}) }}
+{% endblock %}

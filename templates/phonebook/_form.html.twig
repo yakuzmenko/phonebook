@@ -1,0 +1,42 @@
+<div class="phonebook-form">
+    <div class="container">
+        {{ form_start(form) }}
+        <div class="form-header text-center">
+            <h1>{{ form_title|default('Create new phone record') }}</h1>
+        </div>
+        <div class="form-body">
+            <div class="form-group">
+                {{ form_label(form.firstName) }}
+                {{ form_widget(form.firstName) }}
+                <div class="form-error">
+                    {{ form_errors(form.firstName) }}
+                </div>
+            </div>
+            <div class="form-group">
+                {{ form_label(form.lastName) }}
+                {{ form_widget(form.lastName) }}
+                <div class="form-error">
+                    {{ form_errors(form.lastName) }}
+                </div>
+            </div>
+            <div class="form-group">
+                {{ form_label(form.phone) }}
+                {{ form_widget(form.phone) }}
+                <div class="form-error">
+                    {{ form_errors(form.phone) }}
+                </div>
+            </div>
+        </div>
+        <div class="form-footer">
+            <div class="row">
+                <div class="col-6">
+                    <a href="{{ path('phonebook_index') }}" class="btn btn-info">Back to list</a>
+                </div>
+                <div class="col-6">
+                    <input type="submit" class="btn btn-success" value="{{ submit_label|default('Save') }}">
+                </div>
+            </div>
+        </div>
+        {{ form_end(form) }}
+    </div>
+</div>

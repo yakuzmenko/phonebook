@@ -1,0 +1,35 @@
+.phonebook-form {
+  .container {
+    max-width: 600px;
+  }
+
+  .form-header {
+    h1 {
+      font-size: 2rem;
+      margin: 30px 0 20px;
+    }
+  }
+
+  .form-body {
+    label {
+      font-size: 1rem;
+    }
+
+    .form-error {
+      ul {
+        list-style: none;
+        padding: 10px 0 0 10px;
+        color: red;
+      }
+    }
+  }
+
+  .form-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem 0;
+
+    input[type=submit] {
+      float: right;
+    }
+  }
+}
